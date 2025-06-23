@@ -78,9 +78,8 @@ export function Impact() {
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       {/* Hero Header */}
       <div className="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-500 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-pulse">
-            🌍 Impact Dashboard
+        <div className="container mx-auto px-4 text-center">          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-pulse">
+            Impact Dashboard
           </h1>
           <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
             See the real-time environmental impact of our sustainable cup initiative!

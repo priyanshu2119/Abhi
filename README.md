@@ -1,17 +1,19 @@
 # Sustainable Cups 컵
 
+
+Currently working on this so you may see updates...
 **Save the Planet, One Cup at a Time.**
 
-Sustainable Cups is a modern, responsive web application designed to reduce paper cup waste on college campuses. It leverages technology to create an engaging ecosystem where students are motivated to use reusable cups through a system of tracking, rewards, and gamification.
+Sustainable Cups is a web application designed to reduce paper cup waste on college campuses. Students are motivated to use reusable cups through a system of tracking, rewards, and gamification.
 
 ![Sustainable Cups Screenshot](https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=1200)
-*(Image placeholder: A screenshot of the application's home page would be perfect here.)*
+
 
 ---
 
-## 🚀 About The Project
+## About The Project
 
-The project aims to tackle the environmental problem of single-use cup waste. By creating a closed-loop system within a campus, we encourage a behavioral shift towards sustainability. The application serves as the central hub for users, distributors, and administrators to participate in this green initiative.
+This project tackles the environmental problem of single-use cup waste. By creating a system within a campus, we encourage sustainable practices. The application serves as the central hub for users, distributors, and administrators to participate in this initiative.
 
 ### Core Concepts
 *   **Track:** Users scan a QR code on their cup each time they use it.
@@ -20,40 +22,40 @@ The project aims to tackle the environmental problem of single-use cup waste. By
 
 ---
 
-## ✨ Features
+## Features
 
-*   **QR Code Scanning:** Real-time QR code scanning directly in the browser using the device's camera.
-*   **Impact Dashboard:** Dynamic charts and statistics showing the positive environmental impact of the program.
-*   **Rewards System:** A catalog of redeemable rewards from participating distributors.
-*   **Gamification:** A leaderboard to foster friendly competition and user badges for achieving milestones.
-*   **Distributor Directory:** A list of all participating locations with contact information and stats.
-*   **Responsive Design:** A beautiful and intuitive user interface that works seamlessly on desktops, tablets, and mobile devices.
-*   **Multiple User Roles:** (Inferred) Separate login and dashboard functionalities for regular users, distributors, and administrators.
-
----
-
-## 🛠️ Tech Stack
-
-This project is built with a modern and robust technology stack:
-
-*   **Frontend:** [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
-*   **Build Tool:** [Vite](https://vitejs.dev/)
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-*   **Routing:** [React Router](https://reactrouter.com/)
-*   **Charting:** [Chart.js](https://www.chartjs.org/) & [react-chartjs-2](https://react-chartjs-2.js.org/)
-*   **QR Scanning:** [@zxing/library](https://github.com/zxing-js/library)
-*   **Icons:** [Lucide React](https://lucide.dev/)
+*   **QR Code Scanning:** QR code scanning using the device's camera
+*   **Impact Dashboard:** Charts and statistics showing environmental impact
+*   **Rewards System:** Redeemable rewards from participating distributors
+*   **Gamification:** Leaderboard and user badges for achieving milestones
+*   **Distributor Directory:** List of participating locations with contact information
+*   **Responsive Design:** User interface that works on desktop, tablet, and mobile devices
+*   **Multiple User Roles:** Support for regular users, distributors, and administrators
 
 ---
 
-## 🏁 Getting Started
+## Tech Stack
 
-To get a local copy up and running, follow these simple steps.
+This project uses the following technologies:
+
+*   **Frontend:** React, TypeScript
+*   **Build Tool:** Vite
+*   **Styling:** Tailwind CSS
+*   **Routing:** React Router
+*   **Charting:** Chart.js & react-chartjs-2
+*   **QR Scanning:** @zxing/library
+*   **Icons:** Lucide React
+
+---
+
+## Getting Started
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 Make sure you have Node.js and npm installed on your machine.
-*   [Node.js](https://nodejs.org/) (which includes npm)
+*   Node.js (which includes npm)
 
 ### Installation
 
@@ -76,7 +78,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```sh
     npm run dev
     ```
-    This will start the application in development mode. Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in the browser.
+    This will start the application in development mode. Open http://localhost:5173 to view it in the browser.
 
 *   **Build for production:**
     ```sh
@@ -86,9 +88,9 @@ Make sure you have Node.js and npm installed on your machine.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-The codebase is organized logically to maintain a clean and scalable structure.
+The codebase is organized as follows:
 
 ```
 /
@@ -105,14 +107,12 @@ The codebase is organized logically to maintain a clean and scalable structure.
 └── README.md             # You are here!
 ```
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
+## Acknowledgments
 
-## 🙏 Acknowledgments
-
-*   Icons by [Lucide](https://lucide.dev/)
+*   Icons by Lucide
 *   Inspiration for a greener planet.
 
