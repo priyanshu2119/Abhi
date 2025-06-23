@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gift, Coffee, Pizza, ShoppingBag } from 'lucide-react';
+import { Coffee, Pizza, ShoppingBag } from 'lucide-react';
 
 export function Rewards() {
   const [points, setPoints] = React.useState(150);

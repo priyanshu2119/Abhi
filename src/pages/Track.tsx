@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ScanBarcode, Award, AlertCircle } from 'lucide-react';
 import { BrowserMultiFormatReader } from '@zxing/library';
 
 export function Track() {
   const [scanning, setScanning] = useState(false);
-  const [lastScan, setLastScan] = useState<string | null>(null);
   const [points, setPoints] = useState(150);
   const [totalScans, setTotalScans] = useState(15);
-  const [badges, setBadges] = useState(['Eco Starter', 'Weekly Champion']);
+  const [badges] = useState(['Eco Starter', 'Weekly Champion']);
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
   useEffect(() => {
@@ -18,12 +17,12 @@ export function Track() {
         codeReader = new BrowserMultiFormatReader();
         try {
           const videoElement = document.getElementById('video') as HTMLVideoElement;
-          await codeReader.decodeFromVideoDevice(undefined, videoElement, (result) => {
+          await codeReader.decodeFromVideoDevice(null, videoElement, (result) => {
             if (result) {
-              handleSuccessfulScan(result.getText());
+              handleSuccessfulScan();
             }
           });
-        } catch (err) {
+        } catch {
           setMessage({ type: 'error', text: 'Error accessing camera. Please check permissions.' });
         }
       }
@@ -38,8 +37,7 @@ export function Track() {
     };
   }, [scanning]);
 
-  const handleSuccessfulScan = (qrData: string) => {
-    setLastScan(qrData);
+  const handleSuccessfulScan = () => {
     setPoints(prev => prev + 10);
     setTotalScans(prev => prev + 1);
     setMessage({ type: 'success', text: 'Cup scanned successfully! You earned 10 points!' });
